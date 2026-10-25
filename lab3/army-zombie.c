@@ -32,29 +32,26 @@ void add_monster_to_army(struct army*a, struct monster* m){
 
     struct node* next_node= malloc(sizeof(*next_node));
     next_node->monster=m;
-
-    if (a->top ==0){
-        a->first_node = next_node;
-    }
-    else{
-        struct node* cur = a->first_node;
-        for(int i=1; i<a->top; i++){
-            cur= cur->next;
-        }
-        cur->next= next_node;
-    }
+    next_node->next= a->first_node;   // insert at the front: O(1), no traversal
+    a->first_node= next_node;
     a->top+=1;          
 }
 
 void display_army(struct army* a){
     printf("This is a %i stars army\n", a->stars);
     struct node* cur= a->first_node;
-    for(int i=0; i<a->top; i++){
+    while(cur != NULL){
         display_monster(cur->monster);
-        cur= cur-> next;
+        cur= cur->next;
     }
 }
 
 void delete_army(struct army* a){
+    struct node* cur= a->first_node;
+    while(cur != NULL){
+        struct node* next= cur->next;
+        free(cur);
+        cur= next;
+    }
     free(a);
 }

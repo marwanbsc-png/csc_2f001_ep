@@ -55,5 +55,6 @@ void display_army(struct army* a){
 }
 
 void delete_army(struct army* a){
+    free(a->monsters);
     free(a);
 }

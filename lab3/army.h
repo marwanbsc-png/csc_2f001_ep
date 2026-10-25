@@ -1,10 +1,7 @@
-#include "macro.h"
-#include "monster.h"
-
 #ifndef ARMY_H
 #define ARMY_H
 
-
+#include "monster.h"
 
 struct army; // declare that a data structure named army exists
 struct army* create_army();
