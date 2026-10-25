@@ -1,0 +1,17 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     sierpinski
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _sort_get_index, symObjAddr: 0x0, symBinAddr: 0x100003650, symSize: 0x88 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _sort_get_index, symObjAddr: 0x0, symBinAddr: 0x100003650, symSize: 0x88 }
+  - { offsetInCU: 0xA1, offset: 0xA1, size: 0x8, addend: 0x0, symName: _sort_insert_at, symObjAddr: 0x88, symBinAddr: 0x1000036D8, symSize: 0x78 }
+  - { offsetInCU: 0xF3, offset: 0xF3, size: 0x8, addend: 0x0, symName: _sort_insert, symObjAddr: 0x100, symBinAddr: 0x100003750, symSize: 0x50 }
+  - { offsetInCU: 0x145, offset: 0x145, size: 0x8, addend: 0x0, symName: _nb_columns, symObjAddr: 0x150, symBinAddr: 0x1000037A0, symSize: 0x8 }
+  - { offsetInCU: 0x15E, offset: 0x15E, size: 0x8, addend: 0x0, symName: _nb_lines, symObjAddr: 0x158, symBinAddr: 0x1000037A8, symSize: 0x8 }
+  - { offsetInCU: 0x177, offset: 0x177, size: 0x8, addend: 0x0, symName: _grid_init, symObjAddr: 0x160, symBinAddr: 0x1000037B0, symSize: 0x84 }
+  - { offsetInCU: 0x1D3, offset: 0x1D3, size: 0x8, addend: 0x0, symName: _plot_point, symObjAddr: 0x1E4, symBinAddr: 0x100003834, symSize: 0xC4 }
+  - { offsetInCU: 0x221, offset: 0x221, size: 0x8, addend: 0x0, symName: _plot_vline, symObjAddr: 0x2A8, symBinAddr: 0x1000038F8, symSize: 0x124 }
+  - { offsetInCU: 0x2B5, offset: 0x2B5, size: 0x8, addend: 0x0, symName: _plot_poly_sweep, symObjAddr: 0x3CC, symBinAddr: 0x100003A1C, symSize: 0x2B0 }
+  - { offsetInCU: 0x39F, offset: 0x39F, size: 0x8, addend: 0x0, symName: _plot_poly, symObjAddr: 0x67C, symBinAddr: 0x100003CCC, symSize: 0x7C }
+  - { offsetInCU: 0x409, offset: 0x409, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x6F8, symBinAddr: 0x100003D48, symSize: 0x1D4 }
+...
